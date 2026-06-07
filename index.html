@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Studio Business Manager</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="light">
+
+<!-- ===================== SIDEBAR ===================== -->
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-logo" id="brandLogo">SB</div>
+    <div class="brand-text">
+      <h1 id="brandTitle">Studio</h1>
+      <span id="brandSub">Business Manager</span>
+    </div>
+  </div>
+  <nav class="nav">
+    <a class="nav-item active" data-page="dashboard"><span class="ico">📊</span>Dashboard</a>
+    <a class="nav-item" data-page="customers"><span class="ico">👥</span>Customers</a>
+    <a class="nav-item" data-page="projects"><span class="ico">📁</span>Projects</a>
+    <a class="nav-item" data-page="quotations"><span class="ico">📝</span>Quotations</a>
+    <a class="nav-item" data-page="invoices"><span class="ico">🧾</span>Invoices</a>
+    <a class="nav-item" data-page="recurring"><span class="ico">🔄</span>Recurring</a>
+    <a class="nav-item" data-page="payments"><span class="ico">💰</span>Payments</a>
+    <a class="nav-item" data-page="receipts"><span class="ico">🧮</span>Receipts</a>
+    <a class="nav-item" data-page="expenses"><span class="ico">💼</span>Expenses</a>
+    <a class="nav-item" data-page="reports"><span class="ico">📈</span>Reports</a>
+    <a class="nav-item" data-page="settings"><span class="ico">⚙️</span>Settings</a>
+    <a class="nav-item" data-page="backup"><span class="ico">💾</span>Backup</a>
+    <a class="nav-item" data-page="cloud"><span class="ico">☁️</span>Cloud Sync</a>
+  </nav>
+  <div class="sidebar-footer">
+    <button class="btn-ghost" id="themeToggle">🌙 Dark Mode</button>
+    <p class="version" id="versionLabel">v1.5 · Cloud</p>
+    <p class="version" id="cloudStatusMini" style="font-size:11px;opacity:.75;margin-top:4px;">☁️ Sync: not configured</p>
+  </div>
+</aside>
+
+<!-- ===================== MAIN ===================== -->
+<main class="main">
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <button class="icon-btn" id="menuToggle">☰</button>
+    <div class="search-box">
+      <span>🔍</span>
+      <input type="text" id="globalSearch" placeholder="Search customers, projects, invoices, mobile..." />
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <div class="topbar-actions">
+      <span id="cloudPill" class="cloud-pill cloud-off" title="Cloud sync status" onclick="goPage('cloud')">☁️ Offline</span>
+      <span class="company-name" id="topCompanyName">Studio Business Manager</span>
+    </div>
+  </header>
+
+  <!-- ============ DASHBOARD ============ -->
+  <section class="page active" id="page-dashboard">
+    <div class="page-header">
+      <div>
+        <h2 id="dashTitle">Dashboard</h2>
+        <p class="muted">Overview of your studio business</p>
+      </div>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card grad-1 clickable" onclick="goPage('customers')">
+        <div class="stat-ico">👥</div>
+        <div><span class="stat-label">Total Customers</span><h3 id="stTotalCustomers">0</h3></div>
+      </div>
+      <div class="stat-card grad-2 clickable" onclick="goPage('projects')">
+        <div class="stat-ico">📁</div>
+        <div><span class="stat-label">Total Projects</span><h3 id="stTotalProjects">0</h3></div>
+      </div>
+      <div class="stat-card grad-3 clickable" onclick="goPage('projects','active')">
+        <div class="stat-ico">⚡</div>
+        <div><span class="stat-label">Active Projects</span><h3 id="stActiveProjects">0</h3></div>
+      </div>
+      <div class="stat-card grad-4 clickable" onclick="goPage('projects','completed')">
+        <div class="stat-ico">✅</div>
+        <div><span class="stat-label">Completed</span><h3 id="stCompletedProjects">0</h3></div>
+      </div>
+      <div class="stat-card grad-5 clickable" onclick="goPage('invoices','pending')">
+        <div class="stat-ico">⏳</div>
+        <div><span class="stat-label">Pending Payments</span><h3 id="stPendingPayments">₹0</h3></div>
+      </div>
+      <div class="stat-card grad-6 clickable" onclick="goPage('payments')">
+        <div class="stat-ico">💎</div>
+        <div><span class="stat-label">Total Revenue</span><h3 id="stTotalRevenue">₹0</h3></div>
+      </div>
+      <div class="stat-card grad-7 clickable" onclick="goPage('payments')">
+        <div class="stat-ico">📅</div>
+        <div><span class="stat-label">Monthly Revenue</span><h3 id="stMonthlyRevenue">₹0</h3></div>
+      </div>
+      <div class="stat-card grad-8 clickable" onclick="goPage('projects','upcoming')">
+        <div class="stat-ico">🚚</div>
+        <div><span class="stat-label">Upcoming Deliveries</span><h3 id="stUpcomingDeliveries">0</h3></div>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="panel">
+        <div class="panel-head"><h3>Upcoming Deliveries</h3></div>
+        <div class="panel-body" id="upcomingList">
+          <p class="empty">No upcoming deliveries</p>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3>Recent Activities</h3></div>
+        <div class="panel-body" id="activityList">
+          <p class="empty">No recent activity</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-head">
+        <h3>Profit &amp; Loss Snapshot</h3>
+      </div>
+      <div class="panel-body">
+        <div class="pl-grid">
+          <div class="pl-card revenue clickable" onclick="goPage('payments')"><span>Revenue</span><h4 id="plRevenue">₹0</h4></div>
+          <div class="pl-card expense clickable" onclick="goPage('expenses')"><span>Expenses</span><h4 id="plExpense">₹0</h4></div>
+          <div class="pl-card profit clickable" onclick="goPage('reports')"><span>Net Profit</span><h4 id="plProfit">₹0</h4></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CUSTOMERS ============ -->
+  <section class="page" id="page-customers">
+    <div class="page-header">
+      <div><h2>Customers</h2><p class="muted">Manage all your customers</p></div>
+      <button class="btn-primary" onclick="openCustomerModal()">+ Add Customer</button>
+    </div>
+    <div class="toolbar">
+      <input type="text" id="customerSearch" placeholder="Search by name, mobile, city..." class="input" />
+    </div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr>
+          <th>#</th><th>Name</th><th>Mobile</th><th>City</th><th>Projects</th><th>Pending</th><th>Actions</th>
+        </tr></thead>
+        <tbody id="customerTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="page" id="page-projects">
+    <div class="page-header">
+      <div><h2>Projects</h2><p class="muted">Track all studio projects</p></div>
+      <button class="btn-primary" onclick="openProjectModal()">+ New Project</button>
+    </div>
+    <div class="toolbar">
+      <input type="text" id="projectSearch" placeholder="Search projects..." class="input" />
+      <select id="projectStatusFilter" class="input">
+        <option value="">All Status</option>
+      </select>
+    </div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr>
+          <th>#</th><th>Project</th><th>Customer</th><th>Type</th><th>Event Date</th>
+          <th>Value</th><th>Pending</th><th>Status</th><th>Actions</th>
+        </tr></thead>
+        <tbody id="projectTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ QUOTATIONS ============ -->
+  <section class="page" id="page-quotations">
+    <div class="page-header">
+      <div><h2>Quotations</h2><p class="muted">Create premium quotations</p></div>
+      <button class="btn-primary" onclick="openQuotationModal()">+ New Quotation</button>
+    </div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr>
+          <th>Quote #</th><th>Date</th><th>Customer</th><th>Amount</th><th>Status</th><th>Actions</th>
+        </tr></thead>
+        <tbody id="quotationTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ INVOICES ============ -->
+  <section class="page" id="page-invoices">
+    <div class="page-header">
+      <div><h2>Invoices</h2><p class="muted">Generate premium invoices</p></div>
+      <button class="btn-primary" onclick="openInvoiceModal()">+ New Invoice</button>
+    </div>
+    <div class="toolbar">
+      <input type="text" id="invoiceSearch" placeholder="Search invoice..." class="input" />
+      <select id="invoiceStatusFilter" class="input">
+        <option value="">All Status</option>
+        <option>Paid</option><option>Partial</option><option>Unpaid</option>
+      </select>
+    </div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr>
+          <th>Invoice #</th><th>Date</th><th>Customer</th><th>Project</th>
+          <th>Total</th><th>Paid</th><th>Balance</th><th>Status</th><th>Actions</th>
+        </tr></thead>
+        <tbody id="invoiceTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ PAYMENTS ============ -->
+  <section class="page" id="page-payments">
+    <div class="page-header">
+      <div><h2>Payment Ledger</h2><p class="muted">Track all incoming payments</p></div>
+      <button class="btn-primary" onclick="openPaymentModal()">+ Record Payment</button>
+    </div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr>
+          <th>Date</th><th>Customer</th><th>Invoice #</th><th>Amount</th><th>Mode</th><th>Notes</th><th>Actions</th>
+        </tr></thead>
+        <tbody id="paymentTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ RECEIPTS ============ -->
+  <section class="page" id="page-receipts">
+    <div class="page-header">
+      <div><h2>Receipts</h2><p class="muted">Generate payment receipts</p></div>
+    </div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr>
+          <th>Receipt #</th><th>Date</th><th>Customer</th><th>Invoice</th><th>Amount</th><th>Mode</th><th>Actions</th>
+        </tr></thead>
+        <tbody id="receiptTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ EXPENSES ============ -->
+  <section class="page" id="page-expenses">
+    <div class="page-header">
+      <div><h2>Expenses</h2><p class="muted">Track studio expenses</p></div>
+      <button class="btn-primary" onclick="openExpenseModal()">+ Add Expense</button>
+    </div>
+    <div class="stats-grid mini">
+      <div class="stat-card grad-6"><div class="stat-ico">💎</div><div><span class="stat-label">Revenue</span><h3 id="exRevenue">₹0</h3></div></div>
+      <div class="stat-card grad-5"><div class="stat-ico">💸</div><div><span class="stat-label">Expenses</span><h3 id="exTotal">₹0</h3></div></div>
+      <div class="stat-card grad-3"><div class="stat-ico">📈</div><div><span class="stat-label">Profit</span><h3 id="exProfit">₹0</h3></div></div>
+    </div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr>
+          <th>Date</th><th>Category</th><th>Description</th><th>Amount</th><th>Actions</th>
+        </tr></thead>
+        <tbody id="expenseTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ REPORTS ============ -->
+  <section class="page" id="page-reports">
+    <div class="page-header">
+      <div><h2>Reports</h2><p class="muted">Generate detailed reports</p></div>
+    </div>
+    <div class="report-grid">
+      <div class="report-card" onclick="generateReport('daily')"><span>📅</span><h3>Daily Revenue</h3></div>
+      <div class="report-card" onclick="generateReport('monthly')"><span>🗓️</span><h3>Monthly Revenue</h3></div>
+      <div class="report-card" onclick="generateReport('yearly')"><span>📆</span><h3>Yearly Revenue</h3></div>
+      <div class="report-card" onclick="generateReport('pending')"><span>⏳</span><h3>Pending Payments</h3></div>
+      <div class="report-card" onclick="generateReport('completed')"><span>✅</span><h3>Completed Projects</h3></div>
+      <div class="report-card" onclick="generateReport('upcoming')"><span>🚚</span><h3>Upcoming Deliveries</h3></div>
+      <div class="report-card" onclick="generateReport('customers')"><span>👥</span><h3>Customer Report</h3></div>
+      <div class="report-card" onclick="generateReport('expenses')"><span>💼</span><h3>Expense Report</h3></div>
+    </div>
+    <div id="reportOutput" class="panel" style="margin-top:20px; display:none;">
+      <div class="panel-head">
+        <h3 id="reportTitle">Report</h3>
+        <button class="btn-primary" onclick="printReport()">🖨️ Print / PDF</button>
+      </div>
+      <div class="panel-body" id="reportBody"></div>
+    </div>
+  </section>
+
+  <!-- ============ SETTINGS ============ -->
+  <section class="page" id="page-settings">
+    <div class="page-header">
+      <div><h2>Company Settings</h2><p class="muted">These details appear on invoices, quotations &amp; receipts</p></div>
+      <button class="btn-primary" onclick="saveSettings()">💾 Save Settings</button>
+    </div>
+    <div class="settings-grid">
+      <div class="panel">
+        <div class="panel-head"><h3>Company Info</h3></div>
+        <div class="panel-body form-grid">
+          <label>Company Name (shown in sidebar &amp; documents)<input id="set_company_name" class="input"/></label>
+          <label>Logo<input id="set_logo" type="file" accept="image/*" class="input"/></label>
+          <div class="logo-preview"><img id="logoPreview" src="" alt=""/></div>
+          <label class="col-2">Address<textarea id="set_address" class="input"></textarea></label>
+          <label>Mobile Number<input id="set_mobile" class="input"/></label>
+          <label>WhatsApp Number<input id="set_whatsapp" class="input"/></label>
+          <label>Email<input id="set_email" type="email" class="input"/></label>
+          <label>Website<input id="set_website" class="input"/></label>
+          <label>GST Number<input id="set_gst" class="input"/></label>
+          <label>PAN Number<input id="set_pan" class="input"/></label>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3>Bank &amp; UPI Details</h3></div>
+        <div class="panel-body form-grid">
+          <label>Bank Name<input id="set_bank_name" class="input"/></label>
+          <label>Account Holder<input id="set_acc_holder" class="input"/></label>
+          <label>Account Number<input id="set_acc_no" class="input"/></label>
+          <label>IFSC Code<input id="set_ifsc" class="input"/></label>
+          <label>UPI ID<input id="set_upi" class="input" placeholder="example@upi"/></label>
+          <label>Default Tax %<input id="set_tax" type="number" value="0" class="input"/></label>
+          <label>Currency Symbol<input id="set_currency" class="input" value="₹"/></label>
+          <label>Invoice Prefix<input id="set_inv_prefix" class="input" value="INV"/></label>
+          <label>Quotation Prefix<input id="set_quote_prefix" class="input" value="QT"/></label>
+          <label>Receipt Prefix<input id="set_rec_prefix" class="input" value="RC"/></label>
+        </div>
+      </div>
+
+      <!-- Project Types List -->
+      <div class="panel">
+        <div class="panel-head"><h3>Project Types</h3><button class="btn-ghost" onclick="addProjectTypeRow()">+ Add Type</button></div>
+        <div class="panel-body">
+          <p class="muted" style="margin-bottom:10px;">These appear in the "Project Type" dropdown when creating a new project.</p>
+          <div id="projectTypesList" class="settings-list"></div>
+        </div>
+      </div>
+
+      <!-- Auto Items (Quick Add Items) -->
+      <div class="panel">
+        <div class="panel-head"><h3>Auto Items (for Invoice / Quotation)</h3><button class="btn-ghost" onclick="addAutoItemRow()">+ Add Item</button></div>
+        <div class="panel-body">
+          <p class="muted" style="margin-bottom:10px;">Items added here appear as "Quick Add" buttons inside the New Invoice / Quotation modal. Set rate as 0 if you want to type it later.</p>
+          <div id="autoItemsList" class="settings-list"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RECURRING INVOICES ============ -->
+  <section class="page" id="page-recurring">
+    <div class="page-header">
+      <div><h2>Recurring Invoices</h2><p class="muted">Invoices marked as recurring — auto-create monthly</p></div>
+    </div>
+    <div class="table-wrap">
+      <table class="table">
+        <thead><tr>
+          <th>Source Invoice #</th><th>Customer</th><th>Amount</th><th>Next Auto-Create</th><th>Status</th><th>Last Generated</th><th>Actions</th>
+        </tr></thead>
+        <tbody id="recurringTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ BACKUP ============ -->
+  <section class="page" id="page-backup">
+    <div class="page-header">
+      <div><h2>Backup &amp; Restore</h2><p class="muted">Export all data or restore from a JSON backup</p></div>
+    </div>
+    <div class="backup-grid">
+      <div class="panel">
+        <div class="panel-head"><h3>📤 Export Backup</h3></div>
+        <div class="panel-body">
+          <p class="muted">Saves all your data (customers, projects, invoices, payments, expenses, settings) into a single JSON file.</p>
+          <p class="muted backup-hint" id="backupLocationHint">Click "Export Backup" — it will ask you to select your StudioBusinessManager app folder once. After that, every backup auto-saves to the <strong>backup/</strong> folder inside it, overwriting the same file each time.</p>
+          <div class="action-row">
+            <button class="btn-primary" onclick="exportBackup()">Export Backup</button>
+            <button class="btn-ghost" onclick="chooseBackupFolder()">Choose App Folder</button>
+            <button class="btn-ghost" onclick="verifyBackup()">🔎 Verify Last Backup</button>
+          </div>
+          <div id="backupStatusPanel" class="backup-status"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3>📥 Import Backup</h3></div>
+        <div class="panel-body">
+          <p class="muted">⚠️ This will replace all current data with the data inside the backup file.</p>
+          <input type="file" id="importFile" accept="application/json" class="input"/>
+          <button class="btn-primary" onclick="importBackup()" style="margin-top:10px;">Restore From File</button>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3>🗑️ Reset System</h3></div>
+        <div class="panel-body">
+          <p class="muted">Erase all data and start fresh. Cannot be undone.</p>
+          <button class="btn-danger" onclick="resetAll()">Erase All Data</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLOUD SYNC ============ -->
+  <section class="page" id="page-cloud">
+    <div class="page-header">
+      <div>
+        <h2>☁️ Cloud Sync (GitHub)</h2>
+        <p class="muted">Aapka data <strong>data/db.json</strong> me save hota hai — same repo me jaha ye website hosted hai. Har device pe automatic sync, bilkul Google Sheets jaisa.</p>
+      </div>
+    </div>
+
+    <div class="backup-grid">
+
+      <!-- STATUS PANEL -->
+      <div class="panel" style="grid-column: 1 / -1;">
+        <div class="panel-head"><h3>🔌 Connection Status</h3></div>
+        <div class="panel-body">
+          <div id="cloudStatus" class="backup-status"></div>
+          <div class="action-row" style="margin-top:12px;">
+            <button class="btn-primary" onclick="cloudPullNow()">⬇️ Pull from Cloud</button>
+            <button class="btn-primary" onclick="cloudPushNow()">⬆️ Push to Cloud Now</button>
+            <button class="btn-ghost"   onclick="cloudTest()">🔎 Test Connection</button>
+            <button class="btn-ghost"   onclick="cloudDisconnect()">🔌 Disconnect</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONFIG PANEL -->
+      <div class="panel" style="grid-column: 1 / -1;">
+        <div class="panel-head"><h3>⚙️ GitHub Sync Setup</h3></div>
+        <div class="panel-body">
+          <div class="form-grid">
+            <label>GitHub Username *
+              <input id="cloud_owner" class="input" placeholder="e.g. yourname"/>
+            </label>
+            <label>Repository Name *
+              <input id="cloud_repo" class="input" placeholder="e.g. fmbiz"/>
+            </label>
+            <label>Branch
+              <input id="cloud_branch" class="input" placeholder="main" value="main"/>
+            </label>
+            <label>Data File Path
+              <input id="cloud_path" class="input" placeholder="data/db.json" value="data/db.json"/>
+            </label>
+            <label class="col-2">Personal Access Token (PAT) *
+              <input id="cloud_token" type="password" class="input" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx"/>
+              <small class="muted">Token sirf is browser me save hota hai (localStorage). Kisi ko share mat karo.</small>
+            </label>
+          </div>
+          <div class="action-row" style="margin-top:14px;">
+            <button class="btn-primary" onclick="cloudSaveConfig()">💾 Save &amp; Connect</button>
+            <button class="btn-ghost"   onclick="cloudShowSetupGuide()">📘 Setup Guide</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- SETUP GUIDE -->
+      <div class="panel" id="cloudGuidePanel" style="grid-column: 1 / -1; display:none;">
+        <div class="panel-head"><h3>📘 First-time Setup — 5 minute guide</h3></div>
+        <div class="panel-body" style="line-height:1.7;">
+            <p><strong>Step 1.</strong> <a href="https://github.com/signup" target="_blank" rel="noopener">GitHub account banao</a> (free, lifelong).</p>
+            <p><strong>Step 2.</strong> Naya repo banao — naam kuch bhi (e.g. <code>fmbiz</code>). <em>Public</em> rakho (free GitHub Pages ke liye).</p>
+            <p><strong>Step 3.</strong> Is app ki saari files (index.html, app.js, style.css, cloud-sync.js, DP logo.jpg, data/ folder) us repo me upload kar do — drag &amp; drop se bhi ho jaata hai.</p>
+            <p><strong>Step 4.</strong> Repo Settings → <strong>Pages</strong> → Source = <em>Deploy from a branch</em> → Branch = <em>main</em> / root → Save. 1-2 minute me URL milega: <code>https://USERNAME.github.io/fmbiz/</code></p>
+            <p><strong>Step 5.</strong> Personal Access Token banao:</p>
+            <ul>
+              <li>👉 <a href="https://github.com/settings/tokens?type=beta" target="_blank" rel="noopener">github.com/settings/tokens?type=beta</a> — "Generate new token" (Fine-grained)</li>
+              <li><strong>Repository access</strong> → "Only select repositories" → apna <code>fmbiz</code> repo choose karo</li>
+              <li><strong>Permissions</strong> → Repository permissions → <strong>Contents</strong> = <em>Read and write</em></li>
+              <li>Expiration: 1 year (renew karte rehna)</li>
+              <li>Token copy karke neeche field me paste karo (sirf ek baar dikhega!)</li>
+            </ul>
+            <p><strong>Step 6.</strong> Upar form me <em>Username</em>, <em>Repo</em>, <em>Token</em> daal ke <strong>Save &amp; Connect</strong> dabao. Bas!</p>
+            <p style="background:#fff7cc;padding:10px 14px;border-radius:8px;">💡 <strong>Tip:</strong> Token har device pe alag se daalna padega (security ke liye). Username + Repo + Token = setup complete. Phir wo device hamesha ke liye sync me rahega.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== MODALS ===================== -->
+<div class="modal-backdrop" id="modalBackdrop"></div>
+
+<!-- Customer Modal -->
+<div class="modal" id="customerModal">
+  <div class="modal-head"><h3 id="customerModalTitle">Add Customer</h3><button class="icon-btn" onclick="closeModal('customerModal')">✕</button></div>
+  <div class="modal-body form-grid">
+    <input type="hidden" id="cust_id"/>
+    <label>Name *<input id="cust_name" class="input"/></label>
+    <label>Mobile Number *<input id="cust_mobile" class="input"/></label>
+    <label>WhatsApp Number<input id="cust_whatsapp" class="input"/></label>
+    <label>Email<input id="cust_email" class="input"/></label>
+    <label>City<input id="cust_city" class="input"/></label>
+    <label class="col-2">Address<textarea id="cust_address" class="input"></textarea></label>
+    <label class="col-2">Notes<textarea id="cust_notes" class="input"></textarea></label>
+  </div>
+  <div class="modal-foot">
+    <button class="btn-ghost" onclick="closeModal('customerModal')">Cancel</button>
+    <button class="btn-primary" onclick="saveCustomer()">Save Customer</button>
+  </div>
+</div>
+
+<!-- Customer Profile Modal -->
+<div class="modal modal-lg" id="customerProfileModal">
+  <div class="modal-head"><h3>Customer Profile</h3><button class="icon-btn" onclick="closeModal('customerProfileModal')">✕</button></div>
+  <div class="modal-body" id="customerProfileBody"></div>
+</div>
+
+<!-- Project Modal -->
+<div class="modal" id="projectModal">
+  <div class="modal-head"><h3 id="projectModalTitle">New Project</h3><button class="icon-btn" onclick="closeModal('projectModal')">✕</button></div>
+  <div class="modal-body form-grid">
+    <input type="hidden" id="proj_id"/>
+    <label>Project Name *<input id="proj_name" class="input"/></label>
+    <label>Customer *
+      <div class="select-with-add">
+        <select id="proj_customer" class="input"></select>
+        <button type="button" class="btn-ghost small-add" onclick="quickAddCustomer('proj_customer')" title="Add new customer">+</button>
+      </div>
+    </label>
+    <label>Project Type
+      <select id="proj_type" class="input"></select>
+    </label>
+    <label>Status
+      <select id="proj_status" class="input"></select>
+    </label>
+    <label>Booking Date<input id="proj_booking" type="date" class="input"/></label>
+    <label>Event Date<input id="proj_event" type="date" class="input"/></label>
+    <label>Delivery Date<input id="proj_delivery" type="date" class="input"/></label>
+    <label>Project Value<input id="proj_value" type="number" value="0" class="input"/></label>
+    <label>Advance Received<input id="proj_advance" type="number" value="0" class="input"/></label>
+    <label class="col-2">Notes<textarea id="proj_notes" class="input"></textarea></label>
+  </div>
+  <div class="modal-foot">
+    <button class="btn-ghost" onclick="closeModal('projectModal')">Cancel</button>
+    <button class="btn-primary" onclick="saveProject()">Save Project</button>
+  </div>
+</div>
+
+<!-- Quotation Modal -->
+<div class="modal modal-lg" id="quotationModal">
+  <div class="modal-head"><h3 id="quotationModalTitle">New Quotation</h3><button class="icon-btn" onclick="closeModal('quotationModal')">✕</button></div>
+  <div class="modal-body">
+    <input type="hidden" id="quote_id"/>
+    <div class="form-grid">
+      <label>Customer
+        <div class="select-with-add">
+          <select id="quote_customer" class="input"></select>
+          <button type="button" class="btn-ghost small-add" onclick="quickAddCustomer('quote_customer')" title="Add new customer">+</button>
+        </div>
+        <small class="hint">Tip: Leave blank or pick "Guest Customer" — quotations can be created without a saved customer.</small>
+      </label>
+      <label>Guest Name (optional)<input id="quote_guest_name" class="input" placeholder="Used only when no customer is selected"/></label>
+      <label>Date<input id="quote_date" type="date" class="input"/></label>
+      <label>Valid Till<input id="quote_valid" type="date" class="input"/></label>
+      <label>Status
+        <select id="quote_status" class="input">
+          <option>Draft</option><option>Sent</option><option>Accepted</option><option>Rejected</option>
+        </select>
+      </label>
+    </div>
+    <div class="item-section-head">
+      <h4>📋 Items / Services</h4>
+      <div id="quoteAutoItems" class="auto-items-bar"></div>
+    </div>
+    <div class="item-table-wrap">
+      <table class="table item-table">
+        <thead><tr><th style="width:55%">Description</th><th>Qty</th><th>Rate</th><th>Amount</th><th></th></tr></thead>
+        <tbody id="quoteItems"></tbody>
+      </table>
+    </div>
+    <button class="btn-ghost" onclick="addItemRow('quoteItems')">+ Add Item Row</button>
+    <div class="form-grid total-grid">
+      <label>Discount (%)<input id="quote_discount" type="number" value="0" class="input" oninput="calcQuote()"/></label>
+      <label>Tax (%)<input id="quote_tax" type="number" value="0" class="input" oninput="calcQuote()"/></label>
+      <label>Subtotal<input id="quote_subtotal" class="input" readonly/></label>
+      <label>Grand Total<input id="quote_total" class="input" readonly/></label>
+      <label class="col-2">Notes<textarea id="quote_notes" class="input"></textarea></label>
+    </div>
+  </div>
+  <div class="modal-foot">
+    <button class="btn-ghost" onclick="closeModal('quotationModal')">Cancel</button>
+    <button class="btn-primary" onclick="saveQuotation()">Save Quotation</button>
+  </div>
+</div>
+
+<!-- Invoice Modal -->
+<div class="modal modal-lg" id="invoiceModal">
+  <div class="modal-head"><h3 id="invoiceModalTitle">New Invoice</h3><button class="icon-btn" onclick="closeModal('invoiceModal')">✕</button></div>
+  <div class="modal-body">
+    <input type="hidden" id="inv_id"/>
+    <div class="form-grid">
+      <label>Customer *
+        <div class="select-with-add">
+          <select id="inv_customer" class="input" onchange="loadProjectsForCustomer()"></select>
+          <button type="button" class="btn-ghost small-add" onclick="quickAddCustomer('inv_customer')" title="Add new customer">+</button>
+        </div>
+      </label>
+      <label>Project (optional — invoice can be created without project)
+        <select id="inv_project" class="input"></select>
+      </label>
+      <label>Date<input id="inv_date" type="date" class="input"/></label>
+      <label>Due Date<input id="inv_due" type="date" class="input"/></label>
+    </div>
+    <div class="item-section-head">
+      <h4>📋 Items / Services</h4>
+      <div id="invAutoItems" class="auto-items-bar"></div>
+    </div>
+    <div class="item-table-wrap">
+      <table class="table item-table">
+        <thead><tr><th style="width:55%">Description</th><th>Qty</th><th>Rate</th><th>Amount</th><th></th></tr></thead>
+        <tbody id="invItems"></tbody>
+      </table>
+    </div>
+    <button class="btn-ghost" onclick="addItemRow('invItems')">+ Add Item Row</button>
+    <div class="form-grid total-grid">
+      <label>Discount (%)<input id="inv_discount" type="number" value="0" class="input" oninput="calcInvoice()"/></label>
+      <label>Tax (%)<input id="inv_tax" type="number" value="0" class="input" oninput="calcInvoice()"/></label>
+      <label>Subtotal<input id="inv_subtotal" class="input" readonly/></label>
+      <label>Grand Total<input id="inv_total" class="input" readonly/></label>
+      <label>Advance Paid<input id="inv_advance" type="number" value="0" class="input" oninput="calcInvoice()"/></label>
+      <label>Balance<input id="inv_balance" class="input" readonly/></label>
+      <label class="col-2">Notes<textarea id="inv_notes" class="input"></textarea></label>
+      <label class="col-2 recurring-row">
+        <span class="recurring-toggle">
+          <input id="inv_recurring" type="checkbox" onchange="toggleRecurringFields()"/>
+          <strong>🔄 Recurring Monthly Invoice</strong>
+        </span>
+        <small class="hint">When enabled, a fresh copy of this invoice will be auto-created every month (on the same day) until you turn it off.</small>
+        <div id="inv_recurring_fields" style="display:none;margin-top:8px;" class="form-grid">
+          <label>Next Auto-Create Date<input id="inv_recurring_next" type="date" class="input"/></label>
+          <label>Status
+            <select id="inv_recurring_active" class="input">
+              <option value="1">Active — auto-create monthly</option>
+              <option value="0">Paused</option>
+            </select>
+          </label>
+        </div>
+      </label>
+    </div>
+  </div>
+  <div class="modal-foot">
+    <button class="btn-ghost" onclick="closeModal('invoiceModal')">Cancel</button>
+    <button class="btn-primary" onclick="saveInvoice()">Save Invoice</button>
+  </div>
+</div>
+
+<!-- Payment Modal -->
+<div class="modal modal-lg" id="paymentModal">
+  <div class="modal-head"><h3>Record Payment</h3><button class="icon-btn" onclick="closeModal('paymentModal')">✕</button></div>
+  <div class="modal-body form-grid">
+    <input type="hidden" id="pay_id"/>
+    <label class="col-2">Invoice *
+      <select id="pay_invoice" class="input" onchange="updatePayInvoiceInfo()"></select>
+      <div id="pay_invoice_info" class="pay-inv-info"></div>
+    </label>
+    <label>Date<input id="pay_date" type="date" class="input"/></label>
+    <label>Amount *<input id="pay_amount" type="number" class="input"/></label>
+    <label>Mode
+      <select id="pay_mode" class="input">
+        <option>Cash</option><option>UPI</option><option>Bank Transfer</option><option>Card</option><option>Cheque</option>
+      </select>
+    </label>
+    <label class="col-2">Notes<textarea id="pay_notes" class="input"></textarea></label>
+  </div>
+  <div class="modal-foot">
+    <button class="btn-ghost" onclick="closeModal('paymentModal')">Cancel</button>
+    <button class="btn-primary" onclick="savePayment()">Save Payment &amp; Show Receipt</button>
+  </div>
+</div>
+
+<!-- Expense Modal -->
+<div class="modal" id="expenseModal">
+  <div class="modal-head"><h3>Add Expense</h3><button class="icon-btn" onclick="closeModal('expenseModal')">✕</button></div>
+  <div class="modal-body form-grid">
+    <input type="hidden" id="exp_id"/>
+    <label>Date<input id="exp_date" type="date" class="input"/></label>
+    <label>Category
+      <select id="exp_category" class="input">
+        <option>Travel</option><option>Printing</option><option>Album</option>
+        <option>Equipment</option><option>Staff</option><option>Office</option><option>Other</option>
+      </select>
+    </label>
+    <label>Amount *<input id="exp_amount" type="number" class="input"/></label>
+    <label class="col-2">Description<input id="exp_desc" class="input"/></label>
+  </div>
+  <div class="modal-foot">
+    <button class="btn-ghost" onclick="closeModal('expenseModal')">Cancel</button>
+    <button class="btn-primary" onclick="saveExpense()">Save Expense</button>
+  </div>
+</div>
+
+<!-- Document Preview (Invoice / Quotation / Receipt) -->
+<div class="modal modal-xl" id="docModal">
+  <div class="modal-head">
+    <h3 id="docTitle">Document</h3>
+    <div class="doc-share-actions">
+      <button class="btn-wa" id="docShareWA" onclick="shareDocViaWhatsApp()" title="Send via WhatsApp (PDF will auto-download — attach in WhatsApp Web)"><span class="ic-wa-svg"></span> WhatsApp</button>
+      <button class="btn-email" id="docShareEmail" onclick="shareDocViaEmail()" title="Send via Gmail (PDF will auto-download — attach in Gmail)"><span class="ic-gmail-svg"></span> Email</button>
+      <button class="btn-primary" onclick="printDoc()">🖨️ Print / Save PDF</button>
+      <button class="icon-btn" onclick="closeModal('docModal')">✕</button>
+    </div>
+  </div>
+  <div class="modal-body">
+    <div id="docContent" class="doc-print"></div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<script src="cloud-sync.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
