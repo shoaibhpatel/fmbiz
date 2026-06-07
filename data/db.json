@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-07T12:28:09.789Z",
+  "exported_at": "2026-06-07T13:47:20.808Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -35,6 +35,17 @@
       "notes": "",
       "created": 1780832858969,
       "id": 7
+    },
+    {
+      "name": "DigitalPro",
+      "mobile": "+45 28 11 80 11",
+      "whatsapp": "+45 28 11 80 11",
+      "email": "brenly@digitalpro.dk",
+      "city": "copenhagen",
+      "address": "Copenhagen, Denmark",
+      "notes": "",
+      "created": 1780840037782,
+      "id": 8
     }
   ],
   "projects": [],
@@ -308,6 +319,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Customer added: DigitalPro",
+      "icon": "👤",
+      "time": 1780840037798
+    },
     {
       "text": "Invoice INV-4 saved · ₹10,400.00",
       "icon": "🧾",
