@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-07T14:17:19.859Z",
+  "exported_at": "2026-06-07T15:10:23.260Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -78,6 +78,21 @@
       "created": 1780841836831,
       "pending": 0,
       "id": 2
+    },
+    {
+      "name": "Kaatu + Thach",
+      "customer_id": 8,
+      "type": "Wedding Photography",
+      "status": "Pending",
+      "booking": "2026-06-07",
+      "event": "2026-05-07",
+      "delivery": "2026-06-20",
+      "value": 0,
+      "advance": 0,
+      "notes": "",
+      "created": 1780845019458,
+      "pending": 0,
+      "id": 3
     }
   ],
   "quotations": [],
@@ -351,6 +366,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Project created: Kaatu + Thach",
+      "icon": "📁",
+      "time": 1780845019460
+    },
     {
       "text": "Project updated: Puberty Ceremony - Thurga",
       "icon": "📁",
