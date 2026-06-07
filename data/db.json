@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-07T11:53:41.071Z",
+  "exported_at": "2026-06-07T11:53:56.023Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -213,9 +213,9 @@
       "discount": 0,
       "tax": 0,
       "total": 13650,
-      "advance": 0,
-      "balance": 13650,
-      "status": "Unpaid",
+      "advance": 13000,
+      "balance": 650,
+      "status": "Partial",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
@@ -235,6 +235,16 @@
       "notes": "Advance payment",
       "created": 1780822388264,
       "id": 9
+    },
+    {
+      "invoice_id": 10,
+      "customer_id": 7,
+      "date": "2026-06-07",
+      "amount": 13000,
+      "mode": "UPI",
+      "notes": "",
+      "created": 1780833233009,
+      "id": 10
     }
   ],
   "expenses": [],
@@ -249,6 +259,18 @@
       "mode": "Cash",
       "created": 1780822388264,
       "id": 9
+    },
+    {
+      "number": "RC-2",
+      "payment_id": 10,
+      "invoice_id": 10,
+      "customer_id": 7,
+      "date": "2026-06-07",
+      "amount": 13000,
+      "mode": "UPI",
+      "notes": "",
+      "created": 1780833233013,
+      "id": 10
     }
   ],
   "settings": {
@@ -286,6 +308,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Payment received ₹13,000.00 for INV-3",
+      "icon": "💰",
+      "time": 1780833233013
+    },
     {
       "text": "Invoice INV-3 saved · ₹13,650.00",
       "icon": "🧾",
