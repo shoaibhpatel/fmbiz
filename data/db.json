@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-07T13:47:41.485Z",
+  "exported_at": "2026-06-07T14:16:26.211Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -330,7 +330,8 @@
       "Album Designing",
       "Graphic Designing",
       "Video Editing",
-      "Custom Project"
+      "Custom Project",
+      "Saree Ceremony"
     ],
     "auto_items": []
   },
