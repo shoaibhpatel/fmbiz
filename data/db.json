@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-07T12:25:59.796Z",
+  "exported_at": "2026-06-07T12:28:09.789Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -223,39 +223,6 @@
       "recurring_last": "",
       "created": 1780833218048,
       "id": 10
-    },
-    {
-      "number": "INV-4",
-      "customer_id": 5,
-      "project_id": null,
-      "date": "2026-06-07",
-      "due": "2026-06-22",
-      "items": [
-        {
-          "desc": "Album design ",
-          "qty": 130,
-          "rate": 80
-        },
-        {
-          "desc": "",
-          "qty": 1,
-          "rate": 0
-        }
-      ],
-      "subtotal": 10400,
-      "discount": 0,
-      "tax": 0,
-      "total": 10400,
-      "advance": 0,
-      "balance": 10400,
-      "status": "Unpaid",
-      "notes": "",
-      "recurring": 0,
-      "recurring_next": "",
-      "recurring_active": 0,
-      "recurring_last": "",
-      "created": 1780835156726,
-      "id": 11
     }
   ],
   "payments": [
