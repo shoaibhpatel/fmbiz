@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-07T14:16:26.211Z",
+  "exported_at": "2026-06-07T14:16:57.751Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -63,6 +63,21 @@
       "created": 1780840058450,
       "pending": 0,
       "id": 1
+    },
+    {
+      "name": "Puberty Ceremony - Thurga Selected (645)",
+      "customer_id": 8,
+      "type": "Saree Ceremony",
+      "status": "Pending",
+      "booking": "2026-06-07",
+      "event": "2026-06-08",
+      "delivery": "2026-06-12",
+      "value": 0,
+      "advance": 0,
+      "notes": "",
+      "created": 1780841814744,
+      "pending": 0,
+      "id": 2
     }
   ],
   "quotations": [],
@@ -336,6 +351,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Project created: Puberty Ceremony - Thurga Selected (645)",
+      "icon": "📁",
+      "time": 1780841814745
+    },
     {
       "text": "Project created: 1st Birthday - Angelina",
       "icon": "📁",
