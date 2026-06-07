@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-07T11:47:41.986Z",
+  "exported_at": "2026-06-07T11:53:41.071Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -165,6 +165,64 @@
       "recurring_last": "",
       "created": 1780822388251,
       "id": 9
+    },
+    {
+      "number": "INV-3",
+      "customer_id": 7,
+      "project_id": null,
+      "date": "2026-06-07",
+      "due": "2026-06-22",
+      "items": [
+        {
+          "desc": "Old Balance ",
+          "qty": 1,
+          "rate": 2300
+        },
+        {
+          "desc": "Insta post ",
+          "qty": 5,
+          "rate": 50
+        },
+        {
+          "desc": "Company job",
+          "qty": 1,
+          "rate": 500
+        },
+        {
+          "desc": "19-04-2026  Company job",
+          "qty": 1,
+          "rate": 500
+        },
+        {
+          "desc": "26-04-2026  Company job",
+          "qty": 1,
+          "rate": 500
+        },
+        {
+          "desc": "Album Design",
+          "qty": 1,
+          "rate": 4900
+        },
+        {
+          "desc": "Vaibhav joshi Album Design",
+          "qty": 1,
+          "rate": 4700
+        }
+      ],
+      "subtotal": 13650,
+      "discount": 0,
+      "tax": 0,
+      "total": 13650,
+      "advance": 0,
+      "balance": 13650,
+      "status": "Unpaid",
+      "notes": "",
+      "recurring": 0,
+      "recurring_next": "",
+      "recurring_active": 0,
+      "recurring_last": "",
+      "created": 1780833218048,
+      "id": 10
     }
   ],
   "payments": [
@@ -228,6 +286,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Invoice INV-3 saved · ₹13,650.00",
+      "icon": "🧾",
+      "time": 1780833218063
+    },
     {
       "text": "Customer added: Vivek Naik",
       "icon": "👤",
