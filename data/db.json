@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-07T14:16:57.751Z",
+  "exported_at": "2026-06-07T14:17:19.859Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -65,7 +65,7 @@
       "id": 1
     },
     {
-      "name": "Puberty Ceremony - Thurga Selected (645)",
+      "name": "Puberty Ceremony - Thurga",
       "customer_id": 8,
       "type": "Saree Ceremony",
       "status": "Pending",
@@ -75,7 +75,7 @@
       "value": 0,
       "advance": 0,
       "notes": "",
-      "created": 1780841814744,
+      "created": 1780841836831,
       "pending": 0,
       "id": 2
     }
@@ -351,6 +351,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Project updated: Puberty Ceremony - Thurga",
+      "icon": "📁",
+      "time": 1780841836841
+    },
     {
       "text": "Project created: Puberty Ceremony - Thurga Selected (645)",
       "icon": "📁",
