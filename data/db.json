@@ -1,6 +1,7 @@
 {
   "version": 1,
-  "exported_at": "2026-06-07T09:03:49.862Z",
+  "exported_at": "2026-06-07T11:47:41.986Z",
+  "source": "cloud-sync",
   "customers": [
     {
       "name": "Sarang Production",
@@ -23,6 +24,17 @@
       "notes": "",
       "created": 1780821629026,
       "id": 6
+    },
+    {
+      "name": "Vivek Naik",
+      "mobile": "9822333933",
+      "whatsapp": "9822333933",
+      "email": "Vivek.Naik20@gmail.com",
+      "city": "Nashik",
+      "address": "Alok Society, New Pandit Colony, Nashik",
+      "notes": "",
+      "created": 1780832858969,
+      "id": 7
     }
   ],
   "projects": [],
@@ -216,6 +228,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Customer added: Vivek Naik",
+      "icon": "👤",
+      "time": 1780832858981
+    },
     {
       "text": "Invoice INV-2 saved · ₹4,850.00",
       "icon": "🧾",
