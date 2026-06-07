@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-07T13:47:20.808Z",
+  "exported_at": "2026-06-07T13:47:41.485Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -48,7 +48,23 @@
       "id": 8
     }
   ],
-  "projects": [],
+  "projects": [
+    {
+      "name": "1st Birthday - Angelina",
+      "customer_id": 8,
+      "type": "Birthday",
+      "status": "Pending",
+      "booking": "2026-06-07",
+      "event": "2026-06-07",
+      "delivery": "2026-06-11",
+      "value": 0,
+      "advance": 0,
+      "notes": "",
+      "created": 1780840058450,
+      "pending": 0,
+      "id": 1
+    }
+  ],
   "quotations": [],
   "invoices": [
     {
@@ -319,6 +335,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Project created: 1st Birthday - Angelina",
+      "icon": "📁",
+      "time": 1780840058464
+    },
     {
       "text": "Customer added: DigitalPro",
       "icon": "👤",
