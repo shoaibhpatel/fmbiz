@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-09T14:30:28.483Z",
+  "exported_at": "2026-06-15T15:02:11.477Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -269,21 +269,31 @@
           "desc": "Vaibhav joshi Album Design",
           "qty": 1,
           "rate": 4700
+        },
+        {
+          "desc": "Company photos 01-06-2026",
+          "qty": 1,
+          "rate": 500
+        },
+        {
+          "desc": "Company photos 29-05-2026",
+          "qty": 1,
+          "rate": 500
         }
       ],
-      "subtotal": 13650,
+      "subtotal": 14650,
       "discount": 0,
       "tax": 0,
-      "total": 13650,
+      "total": 14650,
       "advance": 13000,
-      "balance": 650,
+      "balance": 1650,
       "status": "Partial",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1780833218048,
+      "created": 1781535728459,
       "id": 10
     }
   ],
@@ -371,6 +381,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Invoice INV-3 saved · ₹14,650.00",
+      "icon": "🧾",
+      "time": 1781535728472
+    },
     {
       "text": "Invoice INV-2 saved · ₹6,194.00",
       "icon": "🧾",
