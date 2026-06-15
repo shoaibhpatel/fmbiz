@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-15T15:02:11.477Z",
+  "exported_at": "2026-06-15T15:34:33.365Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -211,21 +211,26 @@
           "desc": "S-A 25th Anniversary",
           "qty": 224,
           "rate": 6
+        },
+        {
+          "desc": "Nakeesha - Birthday",
+          "qty": 115,
+          "rate": 6
         }
       ],
-      "subtotal": 6194,
+      "subtotal": 6884,
       "discount": 0,
       "tax": 0,
-      "total": 6194,
+      "total": 6884,
       "advance": 654,
-      "balance": 5540,
+      "balance": 6230,
       "status": "Partial",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1781015425466,
+      "created": 1781537670356,
       "id": 9
     },
     {
@@ -381,6 +386,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Invoice INV-2 saved · ₹6,884.00",
+      "icon": "🧾",
+      "time": 1781537670357
+    },
     {
       "text": "Invoice INV-3 saved · ₹14,650.00",
       "icon": "🧾",
