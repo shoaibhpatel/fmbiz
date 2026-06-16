@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-16T16:39:28.400Z",
+  "exported_at": "2026-06-16T16:40:57.634Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -160,9 +160,9 @@
       "discount": 0,
       "tax": 0,
       "total": 24000,
-      "advance": 0,
-      "balance": 24000,
-      "status": "Unpaid",
+      "advance": 24000,
+      "balance": 0,
+      "status": "Paid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
@@ -391,6 +391,16 @@
       "notes": "",
       "created": 1781627962709,
       "id": 12
+    },
+    {
+      "invoice_id": 8,
+      "customer_id": 5,
+      "date": "2026-06-16",
+      "amount": 24000,
+      "mode": "Bank Transfer",
+      "notes": "",
+      "created": 1781628054619,
+      "id": 13
     }
   ],
   "expenses": [],
@@ -441,6 +451,18 @@
       "notes": "",
       "created": 1781627962712,
       "id": 12
+    },
+    {
+      "number": "RC-5",
+      "payment_id": 13,
+      "invoice_id": 8,
+      "customer_id": 5,
+      "date": "2026-06-16",
+      "amount": 24000,
+      "mode": "Bank Transfer",
+      "notes": "",
+      "created": 1781628054628,
+      "id": 13
     }
   ],
   "settings": {
@@ -479,6 +501,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Payment received ₹24,000.00 for INV-1",
+      "icon": "💰",
+      "time": 1781628054629
+    },
     {
       "text": "Payment received ₹500.00 for INV-4",
       "icon": "💰",
