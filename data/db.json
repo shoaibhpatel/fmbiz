@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-15T15:34:33.365Z",
+  "exported_at": "2026-06-16T09:37:07.515Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -216,21 +216,26 @@
           "desc": "Nakeesha - Birthday",
           "qty": 115,
           "rate": 6
+        },
+        {
+          "desc": "Odia",
+          "qty": 296,
+          "rate": 6
         }
       ],
-      "subtotal": 6884,
+      "subtotal": 8660,
       "discount": 0,
       "tax": 0,
-      "total": 6884,
+      "total": 8660,
       "advance": 654,
-      "balance": 6230,
+      "balance": 8006,
       "status": "Partial",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1781537670356,
+      "created": 1781602624504,
       "id": 9
     },
     {
@@ -386,6 +391,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Invoice INV-2 saved · ₹8,660.00",
+      "icon": "🧾",
+      "time": 1781602624505
+    },
     {
       "text": "Invoice INV-2 saved · ₹6,884.00",
       "icon": "🧾",
