@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-16T16:39:17.569Z",
+  "exported_at": "2026-06-16T16:39:28.400Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -339,9 +339,9 @@
       "discount": 0,
       "tax": 0,
       "total": 2500,
-      "advance": 2000,
-      "balance": 500,
-      "status": "Partial",
+      "advance": 2500,
+      "balance": 0,
+      "status": "Paid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
@@ -381,6 +381,16 @@
       "notes": "",
       "created": 1781619243527,
       "id": 11
+    },
+    {
+      "invoice_id": 12,
+      "customer_id": 9,
+      "date": "2026-06-16",
+      "amount": 500,
+      "mode": "UPI",
+      "notes": "",
+      "created": 1781627962709,
+      "id": 12
     }
   ],
   "expenses": [],
@@ -419,6 +429,18 @@
       "notes": "",
       "created": 1781619243541,
       "id": 11
+    },
+    {
+      "number": "RC-4",
+      "payment_id": 12,
+      "invoice_id": 12,
+      "customer_id": 9,
+      "date": "2026-06-16",
+      "amount": 500,
+      "mode": "UPI",
+      "notes": "",
+      "created": 1781627962712,
+      "id": 12
     }
   ],
   "settings": {
@@ -457,6 +479,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Payment received ₹500.00 for INV-4",
+      "icon": "💰",
+      "time": 1781627962712
+    },
     {
       "text": "Invoice INV-4 saved · ₹2,500.00",
       "icon": "🧾",
