@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-16T09:37:07.515Z",
+  "exported_at": "2026-06-16T12:32:43.490Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -46,6 +46,17 @@
       "notes": "",
       "created": 1780840037782,
       "id": 8
+    },
+    {
+      "name": "Ramana Photography",
+      "mobile": "+91 77309 29809",
+      "whatsapp": "+91 77309 29809",
+      "email": "",
+      "city": "Andhra Pradesh",
+      "address": "Andhra Pradesh 520003",
+      "notes": "",
+      "created": 1781613160460,
+      "id": 9
     }
   ],
   "projects": [
@@ -391,6 +402,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Customer added: Ramana Photography",
+      "icon": "👤",
+      "time": 1781613160473
+    },
     {
       "text": "Invoice INV-2 saved · ₹8,660.00",
       "icon": "🧾",
