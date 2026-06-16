@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-16T12:32:43.490Z",
+  "exported_at": "2026-06-16T12:33:24.923Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -316,6 +316,34 @@
       "recurring_last": "",
       "created": 1781535728459,
       "id": 10
+    },
+    {
+      "number": "INV-4",
+      "customer_id": 9,
+      "project_id": null,
+      "date": "2026-06-16",
+      "due": "2026-07-01",
+      "items": [
+        {
+          "desc": "Pre- wedding Edit ",
+          "qty": 40,
+          "rate": 50
+        }
+      ],
+      "subtotal": 2000,
+      "discount": 0,
+      "tax": 0,
+      "total": 2000,
+      "advance": 0,
+      "balance": 2000,
+      "status": "Unpaid",
+      "notes": "",
+      "recurring": 0,
+      "recurring_next": "",
+      "recurring_active": 0,
+      "recurring_last": "",
+      "created": 1781613201916,
+      "id": 12
     }
   ],
   "payments": [
@@ -402,6 +430,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Invoice INV-4 saved · ₹2,000.00",
+      "icon": "🧾",
+      "time": 1781613201916
+    },
     {
       "text": "Customer added: Ramana Photography",
       "icon": "👤",
