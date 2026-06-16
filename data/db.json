@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-16T14:14:06.551Z",
+  "exported_at": "2026-06-16T16:39:17.569Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -328,21 +328,26 @@
           "desc": "Pre- wedding Edit ",
           "qty": 40,
           "rate": 50
+        },
+        {
+          "desc": "SlideShow Video",
+          "qty": 1,
+          "rate": 500
         }
       ],
-      "subtotal": 2000,
+      "subtotal": 2500,
       "discount": 0,
       "tax": 0,
-      "total": 2000,
+      "total": 2500,
       "advance": 2000,
-      "balance": 0,
-      "status": "Paid",
+      "balance": 500,
+      "status": "Partial",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1781613201916,
+      "created": 1781627954555,
       "id": 12
     }
   ],
@@ -452,6 +457,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Invoice INV-4 saved · ₹2,500.00",
+      "icon": "🧾",
+      "time": 1781627954561
+    },
     {
       "text": "Payment received ₹2,000.00 for INV-4",
       "icon": "💰",
