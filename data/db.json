@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-18T12:50:01.078Z",
+  "exported_at": "2026-06-18T15:45:16.850Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -349,6 +349,34 @@
       "recurring_last": "",
       "created": 1781627954555,
       "id": 12
+    },
+    {
+      "number": "INV-5",
+      "customer_id": 6,
+      "project_id": null,
+      "date": "2026-06-18",
+      "due": "2026-07-03",
+      "items": [
+        {
+          "desc": "Mandeep Birthday Edited",
+          "qty": 150,
+          "rate": 6
+        }
+      ],
+      "subtotal": 900,
+      "discount": 0,
+      "tax": 0,
+      "total": 900,
+      "advance": 0,
+      "balance": 900,
+      "status": "Unpaid",
+      "notes": "",
+      "recurring": 0,
+      "recurring_next": "",
+      "recurring_active": 0,
+      "recurring_last": "",
+      "created": 1781797513829,
+      "id": 13
     }
   ],
   "payments": [
@@ -523,6 +551,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Invoice INV-5 saved · ₹900.00",
+      "icon": "🧾",
+      "time": 1781797513837
+    },
     {
       "text": "Payment received ₹8,006.00 for INV-2",
       "icon": "💰",
