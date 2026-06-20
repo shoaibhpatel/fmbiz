@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-18T15:45:16.850Z",
+  "exported_at": "2026-06-20T13:58:30.551Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -377,6 +377,34 @@
       "recurring_last": "",
       "created": 1781797513829,
       "id": 13
+    },
+    {
+      "number": "INV-6",
+      "customer_id": 5,
+      "project_id": null,
+      "date": "2026-06-20",
+      "due": "2026-07-05",
+      "items": [
+        {
+          "desc": "Arshdeep & Arshpreet",
+          "qty": 1,
+          "rate": 3000
+        }
+      ],
+      "subtotal": 3000,
+      "discount": 0,
+      "tax": 0,
+      "total": 3000,
+      "advance": 0,
+      "balance": 3000,
+      "status": "Unpaid",
+      "notes": "",
+      "recurring": 0,
+      "recurring_next": "",
+      "recurring_active": 0,
+      "recurring_last": "",
+      "created": 1781963907545,
+      "id": 14
     }
   ],
   "payments": [
@@ -551,6 +579,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Invoice INV-6 saved · ₹3,000.00",
+      "icon": "🧾",
+      "time": 1781963907547
+    },
     {
       "text": "Invoice INV-5 saved · ₹900.00",
       "icon": "🧾",
