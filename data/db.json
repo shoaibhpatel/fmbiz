@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-20T16:19:27.031Z",
+  "exported_at": "2026-06-20T17:12:50.968Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -79,14 +79,14 @@
       "name": "Puberty Ceremony - Thurga",
       "customer_id": 8,
       "type": "Saree Ceremony",
-      "status": "Pending",
+      "status": "Completed",
       "booking": "2026-06-07",
       "event": "2026-06-08",
       "delivery": "2026-06-12",
       "value": 0,
       "advance": 0,
       "notes": "",
-      "created": 1780841836831,
+      "created": 1781975567916,
       "pending": 0,
       "id": 2
     },
@@ -585,9 +585,9 @@
   },
   "activities": [
     {
-      "text": "Invoice INV-5 saved · ₹2,370.00",
-      "icon": "🧾",
-      "time": 1781972364016
+      "text": "Project updated: Puberty Ceremony - Thurga",
+      "icon": "📁",
+      "time": 1781975567962
     },
     {
       "text": "Invoice INV-6 saved · ₹3,000.00",
