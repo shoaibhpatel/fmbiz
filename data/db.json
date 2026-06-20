@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-20T13:58:30.551Z",
+  "exported_at": "2026-06-20T16:19:27.031Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -361,21 +361,26 @@
           "desc": "Mandeep Birthday Edited",
           "qty": 150,
           "rate": 6
+        },
+        {
+          "desc": "Yoga",
+          "qty": 245,
+          "rate": 6
         }
       ],
-      "subtotal": 900,
+      "subtotal": 2370,
       "discount": 0,
       "tax": 0,
-      "total": 900,
+      "total": 2370,
       "advance": 0,
-      "balance": 900,
+      "balance": 2370,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1781797513829,
+      "created": 1781972364015,
       "id": 13
     },
     {
@@ -579,6 +584,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Invoice INV-5 saved · ₹2,370.00",
+      "icon": "🧾",
+      "time": 1781972364016
+    },
     {
       "text": "Invoice INV-6 saved · ₹3,000.00",
       "icon": "🧾",
