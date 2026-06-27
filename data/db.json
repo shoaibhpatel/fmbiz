@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-20T17:12:50.968Z",
+  "exported_at": "2026-06-27T14:06:06.238Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -366,21 +366,26 @@
           "desc": "Yoga",
           "qty": 245,
           "rate": 6
+        },
+        {
+          "desc": "Music Party",
+          "qty": 155,
+          "rate": 6
         }
       ],
-      "subtotal": 2370,
+      "subtotal": 3300,
       "discount": 0,
       "tax": 0,
-      "total": 2370,
+      "total": 3300,
       "advance": 0,
-      "balance": 2370,
+      "balance": 3300,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1781972364015,
+      "created": 1782569163231,
       "id": 13
     },
     {
@@ -584,6 +589,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Invoice INV-5 saved · ₹3,300.00",
+      "icon": "🧾",
+      "time": 1782569163232
+    },
     {
       "text": "Project updated: Puberty Ceremony - Thurga",
       "icon": "📁",
