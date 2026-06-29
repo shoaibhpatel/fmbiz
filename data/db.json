@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-27T14:06:06.238Z",
+  "exported_at": "2026-06-29T08:50:49.915Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -371,21 +371,26 @@
           "desc": "Music Party",
           "qty": 155,
           "rate": 6
+        },
+        {
+          "desc": "Mandeep Birthday BG change",
+          "qty": 13,
+          "rate": 50
         }
       ],
-      "subtotal": 3300,
+      "subtotal": 3950,
       "discount": 0,
       "tax": 0,
-      "total": 3300,
+      "total": 3950,
       "advance": 0,
-      "balance": 3300,
+      "balance": 3950,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1782569163231,
+      "created": 1782723046907,
       "id": 13
     },
     {
@@ -590,6 +595,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-5 saved · ₹3,950.00",
+      "icon": "🧾",
+      "time": 1782723046911
+    },
+    {
       "text": "Invoice INV-5 saved · ₹3,300.00",
       "icon": "🧾",
       "time": 1782569163232
@@ -733,11 +743,6 @@
       "text": "Invoice INV-1 saved · ₹24,000.00",
       "icon": "🧾",
       "time": 1780820910888
-    },
-    {
-      "text": "Customer added: Sarang Production",
-      "icon": "👤",
-      "time": 1780820799655
     }
   ]
 }
