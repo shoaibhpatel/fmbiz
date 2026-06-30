@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-29T08:50:49.915Z",
+  "exported_at": "2026-06-30T14:50:01.529Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -106,7 +106,35 @@
       "id": 3
     }
   ],
-  "quotations": [],
+  "quotations": [
+    {
+      "number": "QT-1",
+      "customer_id": 9,
+      "guest_name": "",
+      "date": "2026-06-30",
+      "valid": "2026-07-01",
+      "status": "Draft",
+      "items": [
+        {
+          "desc": "wedding",
+          "qty": 1,
+          "rate": 25000
+        },
+        {
+          "desc": "video",
+          "qty": 1,
+          "rate": 15000
+        }
+      ],
+      "subtotal": 40000,
+      "discount": 0,
+      "tax": 0,
+      "total": 40000,
+      "notes": "",
+      "created": 1782830998491,
+      "id": 1
+    }
+  ],
   "invoices": [
     {
       "number": "INV-1",
@@ -595,6 +623,11 @@
   },
   "activities": [
     {
+      "text": "Quotation QT-1 saved",
+      "icon": "📝",
+      "time": 1782830998511
+    },
+    {
       "text": "Invoice INV-5 saved · ₹3,950.00",
       "icon": "🧾",
       "time": 1782723046911
@@ -738,11 +771,6 @@
       "text": "Customer updated: Sarang Production",
       "icon": "👤",
       "time": 1780821239786
-    },
-    {
-      "text": "Invoice INV-1 saved · ₹24,000.00",
-      "icon": "🧾",
-      "time": 1780820910888
     }
   ]
 }
