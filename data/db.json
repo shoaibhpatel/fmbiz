@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-30T14:50:01.529Z",
+  "exported_at": "2026-06-30T16:36:27.338Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -432,21 +432,26 @@
           "desc": "Arshdeep & Arshpreet",
           "qty": 1,
           "rate": 3000
+        },
+        {
+          "desc": "Mahendi",
+          "qty": 1,
+          "rate": 3000
         }
       ],
-      "subtotal": 3000,
+      "subtotal": 6000,
       "discount": 0,
       "tax": 0,
-      "total": 3000,
+      "total": 6000,
       "advance": 0,
-      "balance": 3000,
+      "balance": 6000,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1781963907545,
+      "created": 1782837384312,
       "id": 14
     }
   ],
@@ -623,6 +628,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-6 saved · ₹6,000.00",
+      "icon": "🧾",
+      "time": 1782837384334
+    },
+    {
       "text": "Quotation QT-1 saved",
       "icon": "📝",
       "time": 1782830998511
@@ -766,11 +776,6 @@
       "text": "Invoice INV-1 saved · ₹24,000.00",
       "icon": "🧾",
       "time": 1780821273596
-    },
-    {
-      "text": "Customer updated: Sarang Production",
-      "icon": "👤",
-      "time": 1780821239786
     }
   ]
 }
