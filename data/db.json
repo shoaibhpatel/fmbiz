@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-06-30T16:36:27.338Z",
+  "exported_at": "2026-07-03T13:16:51.185Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -404,21 +404,26 @@
           "desc": "Mandeep Birthday BG change",
           "qty": 13,
           "rate": 50
+        },
+        {
+          "desc": "family birthday both",
+          "qty": 166,
+          "rate": 6
         }
       ],
-      "subtotal": 3950,
+      "subtotal": 4946,
       "discount": 0,
       "tax": 0,
-      "total": 3950,
+      "total": 4946,
       "advance": 0,
-      "balance": 3950,
+      "balance": 4946,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1782723046907,
+      "created": 1783084608178,
       "id": 13
     },
     {
@@ -628,6 +633,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-5 saved · ₹4,946.00",
+      "icon": "🧾",
+      "time": 1783084608179
+    },
+    {
       "text": "Invoice INV-6 saved · ₹6,000.00",
       "icon": "🧾",
       "time": 1782837384334
@@ -771,11 +781,6 @@
       "text": "Customer added: Kodak Clicks",
       "icon": "👤",
       "time": 1780821629034
-    },
-    {
-      "text": "Invoice INV-1 saved · ₹24,000.00",
-      "icon": "🧾",
-      "time": 1780821273596
     }
   ]
 }
