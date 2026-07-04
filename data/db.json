@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-03T13:16:51.185Z",
+  "exported_at": "2026-07-04T09:18:07.852Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -328,21 +328,26 @@
           "desc": "Company photos 29-05-2026",
           "qty": 1,
           "rate": 500
+        },
+        {
+          "desc": "Image Correction ",
+          "qty": 1,
+          "rate": 1500
         }
       ],
-      "subtotal": 14650,
+      "subtotal": 16150,
       "discount": 0,
       "tax": 0,
-      "total": 14650,
+      "total": 16150,
       "advance": 13000,
-      "balance": 1650,
+      "balance": 3150,
       "status": "Partial",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1781535728459,
+      "created": 1783156684822,
       "id": 10
     },
     {
@@ -633,6 +638,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-3 saved · ₹16,150.00",
+      "icon": "🧾",
+      "time": 1783156684848
+    },
+    {
       "text": "Invoice INV-5 saved · ₹4,946.00",
       "icon": "🧾",
       "time": 1783084608179
@@ -776,11 +786,6 @@
       "text": "Invoice INV-2 saved · ₹4,850.00",
       "icon": "🧾",
       "time": 1780822388265
-    },
-    {
-      "text": "Customer added: Kodak Clicks",
-      "icon": "👤",
-      "time": 1780821629034
     }
   ]
 }
