@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-04T09:18:07.852Z",
+  "exported_at": "2026-07-06T10:32:50.946Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -414,21 +414,26 @@
           "desc": "family birthday both",
           "qty": 166,
           "rate": 6
+        },
+        {
+          "desc": "Johar Sir",
+          "qty": 200,
+          "rate": 6
         }
       ],
-      "subtotal": 4946,
+      "subtotal": 6146,
       "discount": 0,
       "tax": 0,
-      "total": 4946,
+      "total": 6146,
       "advance": 0,
-      "balance": 4946,
+      "balance": 6146,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1783084608178,
+      "created": 1783333967929,
       "id": 13
     },
     {
@@ -638,6 +643,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-5 saved · ₹6,146.00",
+      "icon": "🧾",
+      "time": 1783333967942
+    },
+    {
       "text": "Invoice INV-3 saved · ₹16,150.00",
       "icon": "🧾",
       "time": 1783156684848
@@ -781,11 +791,6 @@
       "text": "Customer added: Vivek Naik",
       "icon": "👤",
       "time": 1780832858981
-    },
-    {
-      "text": "Invoice INV-2 saved · ₹4,850.00",
-      "icon": "🧾",
-      "time": 1780822388265
     }
   ]
 }
