@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-06T10:32:50.946Z",
+  "exported_at": "2026-07-09T11:08:35.684Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -419,21 +419,26 @@
           "desc": "Johar Sir",
           "qty": 200,
           "rate": 6
+        },
+        {
+          "desc": "Travel 24x7",
+          "qty": 135,
+          "rate": 6
         }
       ],
-      "subtotal": 6146,
+      "subtotal": 6956,
       "discount": 0,
       "tax": 0,
-      "total": 6146,
+      "total": 6956,
       "advance": 0,
-      "balance": 6146,
+      "balance": 6956,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1783333967929,
+      "created": 1783595312672,
       "id": 13
     },
     {
@@ -643,6 +648,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-5 saved · ₹6,956.00",
+      "icon": "🧾",
+      "time": 1783595312673
+    },
+    {
       "text": "Invoice INV-5 saved · ₹6,146.00",
       "icon": "🧾",
       "time": 1783333967942
@@ -786,11 +796,6 @@
       "text": "Invoice INV-3 saved · ₹13,650.00",
       "icon": "🧾",
       "time": 1780833218063
-    },
-    {
-      "text": "Customer added: Vivek Naik",
-      "icon": "👤",
-      "time": 1780832858981
     }
   ]
 }
