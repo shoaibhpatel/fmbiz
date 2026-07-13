@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-09T11:08:35.684Z",
+  "exported_at": "2026-07-13T15:53:53.103Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -424,21 +424,26 @@
           "desc": "Travel 24x7",
           "qty": 135,
           "rate": 6
+        },
+        {
+          "desc": "Pooja events ",
+          "qty": 371,
+          "rate": 6
         }
       ],
-      "subtotal": 6956,
+      "subtotal": 9182,
       "discount": 0,
       "tax": 0,
-      "total": 6956,
+      "total": 9182,
       "advance": 0,
-      "balance": 6956,
+      "balance": 9182,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1783595312672,
+      "created": 1783958030056,
       "id": 13
     },
     {
@@ -648,6 +653,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-5 saved · ₹9,182.00",
+      "icon": "🧾",
+      "time": 1783958030068
+    },
+    {
       "text": "Invoice INV-5 saved · ₹6,956.00",
       "icon": "🧾",
       "time": 1783595312673
@@ -791,11 +801,6 @@
       "text": "Payment received ₹13,000.00 for INV-3",
       "icon": "💰",
       "time": 1780833233013
-    },
-    {
-      "text": "Invoice INV-3 saved · ₹13,650.00",
-      "icon": "🧾",
-      "time": 1780833218063
     }
   ]
 }
