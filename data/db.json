@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-17T13:57:38.469Z",
+  "exported_at": "2026-07-17T14:01:53.385Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -432,7 +432,7 @@
         },
         {
           "desc": "Rishita Birthday",
-          "qty": 156,
+          "qty": 158,
           "rate": 7
         },
         {
@@ -441,19 +441,19 @@
           "rate": 7
         }
       ],
-      "subtotal": 11114,
+      "subtotal": 11128,
       "discount": 0,
       "tax": 0,
-      "total": 11114,
+      "total": 11128,
       "advance": 0,
-      "balance": 11114,
+      "balance": 11128,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1784296655451,
+      "created": 1784296910362,
       "id": 13
     },
     {
@@ -663,6 +663,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-5 saved · ₹11,128.00",
+      "icon": "🧾",
+      "time": 1784296910375
+    },
+    {
       "text": "Invoice INV-5 saved · ₹11,114.00",
       "icon": "🧾",
       "time": 1784296655461
@@ -806,11 +811,6 @@
       "text": "Project created: 1st Birthday - Angelina",
       "icon": "📁",
       "time": 1780840058464
-    },
-    {
-      "text": "Customer added: DigitalPro",
-      "icon": "👤",
-      "time": 1780840037798
     }
   ]
 }
