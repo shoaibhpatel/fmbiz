@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-13T15:53:53.103Z",
+  "exported_at": "2026-07-17T12:46:13.434Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -429,21 +429,26 @@
           "desc": "Pooja events ",
           "qty": 371,
           "rate": 6
+        },
+        {
+          "desc": "Rishita Birthday",
+          "qty": 156,
+          "rate": 7
         }
       ],
-      "subtotal": 9182,
+      "subtotal": 10274,
       "discount": 0,
       "tax": 0,
-      "total": 9182,
+      "total": 10274,
       "advance": 0,
-      "balance": 9182,
+      "balance": 10274,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1783958030056,
+      "created": 1784292370415,
       "id": 13
     },
     {
@@ -653,6 +658,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-5 saved · ₹10,274.00",
+      "icon": "🧾",
+      "time": 1784292370429
+    },
+    {
       "text": "Invoice INV-5 saved · ₹9,182.00",
       "icon": "🧾",
       "time": 1783958030068
@@ -796,11 +806,6 @@
       "text": "Invoice INV-4 saved · ₹10,400.00",
       "icon": "🧾",
       "time": 1780835156742
-    },
-    {
-      "text": "Payment received ₹13,000.00 for INV-3",
-      "icon": "💰",
-      "time": 1780833233013
     }
   ]
 }
