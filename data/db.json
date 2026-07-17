@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-17T12:46:13.434Z",
+  "exported_at": "2026-07-17T13:57:38.469Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -434,21 +434,26 @@
           "desc": "Rishita Birthday",
           "qty": 156,
           "rate": 7
+        },
+        {
+          "desc": "Shrihan Birthday",
+          "qty": 120,
+          "rate": 7
         }
       ],
-      "subtotal": 10274,
+      "subtotal": 11114,
       "discount": 0,
       "tax": 0,
-      "total": 10274,
+      "total": 11114,
       "advance": 0,
-      "balance": 10274,
+      "balance": 11114,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1784292370415,
+      "created": 1784296655451,
       "id": 13
     },
     {
@@ -658,6 +663,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-5 saved · ₹11,114.00",
+      "icon": "🧾",
+      "time": 1784296655461
+    },
+    {
       "text": "Invoice INV-5 saved · ₹10,274.00",
       "icon": "🧾",
       "time": 1784292370429
@@ -801,11 +811,6 @@
       "text": "Customer added: DigitalPro",
       "icon": "👤",
       "time": 1780840037798
-    },
-    {
-      "text": "Invoice INV-4 saved · ₹10,400.00",
-      "icon": "🧾",
-      "time": 1780835156742
     }
   ]
 }
