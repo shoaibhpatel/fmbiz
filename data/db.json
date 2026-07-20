@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-20T11:36:18.882Z",
+  "exported_at": "2026-07-20T12:39:34.614Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -444,21 +444,26 @@
           "desc": "baby shoot",
           "qty": 37,
           "rate": 7
+        },
+        {
+          "desc": "Shridhar birthday",
+          "qty": 157,
+          "rate": 7
         }
       ],
-      "subtotal": 11387,
+      "subtotal": 12486,
       "discount": 0,
       "tax": 0,
-      "total": 11387,
+      "total": 12486,
       "advance": 0,
-      "balance": 11387,
+      "balance": 12486,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1784547375819,
+      "created": 1784551171604,
       "id": 13
     },
     {
@@ -668,6 +673,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-5 saved · ₹12,486.00",
+      "icon": "🧾",
+      "time": 1784551171607
+    },
+    {
       "text": "Invoice INV-5 saved · ₹11,387.00",
       "icon": "🧾",
       "time": 1784547375871
@@ -811,11 +821,6 @@
       "text": "Project updated: Puberty Ceremony - Thurga",
       "icon": "📁",
       "time": 1780841836841
-    },
-    {
-      "text": "Project created: Puberty Ceremony - Thurga Selected (645)",
-      "icon": "📁",
-      "time": 1780841814745
     }
   ]
 }
