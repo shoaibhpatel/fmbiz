@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-22T13:09:09.809Z",
+  "exported_at": "2026-07-22T13:09:21.224Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -339,9 +339,9 @@
       "discount": 0,
       "tax": 0,
       "total": 16150,
-      "advance": 13000,
-      "balance": 3150,
-      "status": "Partial",
+      "advance": 16150,
+      "balance": 0,
+      "status": "Paid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
@@ -570,6 +570,16 @@
       "notes": "",
       "created": 1784725746767,
       "id": 15
+    },
+    {
+      "invoice_id": 10,
+      "customer_id": 7,
+      "date": "2026-07-22",
+      "amount": 3150,
+      "mode": "UPI",
+      "notes": "",
+      "created": 1784725758182,
+      "id": 16
     }
   ],
   "expenses": [],
@@ -656,6 +666,18 @@
       "notes": "",
       "created": 1784725746805,
       "id": 15
+    },
+    {
+      "number": "RC-8",
+      "payment_id": 16,
+      "invoice_id": 10,
+      "customer_id": 7,
+      "date": "2026-07-22",
+      "amount": 3150,
+      "mode": "UPI",
+      "notes": "",
+      "created": 1784725758218,
+      "id": 16
     }
   ],
   "settings": {
@@ -694,6 +716,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Payment received ₹3,150.00 for INV-3",
+      "icon": "💰",
+      "time": 1784725758219
+    },
     {
       "text": "Payment received ₹12,486.00 for INV-5",
       "icon": "💰",
@@ -838,11 +865,6 @@
       "text": "Invoice INV-2 saved · ₹6,194.00",
       "icon": "🧾",
       "time": 1781015425479
-    },
-    {
-      "text": "Project created: Kaatu + Thach",
-      "icon": "📁",
-      "time": 1780845019460
     }
   ]
 }
