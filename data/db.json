@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-20T12:39:34.614Z",
+  "exported_at": "2026-07-22T13:09:09.809Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -455,9 +455,9 @@
       "discount": 0,
       "tax": 0,
       "total": 12486,
-      "advance": 0,
-      "balance": 12486,
-      "status": "Unpaid",
+      "advance": 12486,
+      "balance": 0,
+      "status": "Paid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
@@ -560,6 +560,16 @@
       "notes": "",
       "created": 1781786998050,
       "id": 14
+    },
+    {
+      "invoice_id": 13,
+      "customer_id": 6,
+      "date": "2026-07-22",
+      "amount": 12486,
+      "mode": "Bank Transfer",
+      "notes": "",
+      "created": 1784725746767,
+      "id": 15
     }
   ],
   "expenses": [],
@@ -634,6 +644,18 @@
       "notes": "",
       "created": 1781786998063,
       "id": 14
+    },
+    {
+      "number": "RC-7",
+      "payment_id": 15,
+      "invoice_id": 13,
+      "customer_id": 6,
+      "date": "2026-07-22",
+      "amount": 12486,
+      "mode": "Bank Transfer",
+      "notes": "",
+      "created": 1784725746805,
+      "id": 15
     }
   ],
   "settings": {
@@ -672,6 +694,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Payment received ₹12,486.00 for INV-5",
+      "icon": "💰",
+      "time": 1784725746806
+    },
     {
       "text": "Invoice INV-5 saved · ₹12,486.00",
       "icon": "🧾",
@@ -816,11 +843,6 @@
       "text": "Project created: Kaatu + Thach",
       "icon": "📁",
       "time": 1780845019460
-    },
-    {
-      "text": "Project updated: Puberty Ceremony - Thurga",
-      "icon": "📁",
-      "time": 1780841836841
     }
   ]
 }
