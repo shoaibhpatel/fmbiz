@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-22T13:09:21.224Z",
+  "exported_at": "2026-07-22T13:10:07.547Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -94,14 +94,14 @@
       "name": "Kaatu + Thach",
       "customer_id": 8,
       "type": "Wedding Photography",
-      "status": "Pending",
+      "status": "Completed",
       "booking": "2026-06-07",
       "event": "2026-05-07",
       "delivery": "2026-06-20",
       "value": 0,
       "advance": 0,
       "notes": "",
-      "created": 1780845019458,
+      "created": 1784725804517,
       "pending": 0,
       "id": 3
     }
@@ -717,6 +717,11 @@
   },
   "activities": [
     {
+      "text": "Project updated: Kaatu + Thach",
+      "icon": "📁",
+      "time": 1784725804542
+    },
+    {
       "text": "Payment received ₹3,150.00 for INV-3",
       "icon": "💰",
       "time": 1784725758219
@@ -860,11 +865,6 @@
       "text": "Invoice INV-3 saved · ₹14,650.00",
       "icon": "🧾",
       "time": 1781535728472
-    },
-    {
-      "text": "Invoice INV-2 saved · ₹6,194.00",
-      "icon": "🧾",
-      "time": 1781015425479
     }
   ]
 }
