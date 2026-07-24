@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-22T13:10:07.547Z",
+  "exported_at": "2026-07-24T10:53:03.723Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -498,6 +498,34 @@
       "recurring_last": "",
       "created": 1782837384312,
       "id": 14
+    },
+    {
+      "number": "INV-7",
+      "customer_id": 6,
+      "project_id": null,
+      "date": "2026-07-24",
+      "due": "2026-08-08",
+      "items": [
+        {
+          "desc": "Photo Editng 27-07-2026",
+          "qty": 149,
+          "rate": 7
+        }
+      ],
+      "subtotal": 1043,
+      "discount": 0,
+      "tax": 0,
+      "total": 1043,
+      "advance": 0,
+      "balance": 1043,
+      "status": "Unpaid",
+      "notes": "",
+      "recurring": 0,
+      "recurring_next": "",
+      "recurring_active": 0,
+      "recurring_last": "",
+      "created": 1784890380695,
+      "id": 15
     }
   ],
   "payments": [
@@ -717,6 +745,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-7 saved · ₹1,043.00",
+      "icon": "🧾",
+      "time": 1784890380707
+    },
+    {
       "text": "Project updated: Kaatu + Thach",
       "icon": "📁",
       "time": 1784725804542
@@ -860,11 +893,6 @@
       "text": "Invoice INV-2 saved · ₹6,884.00",
       "icon": "🧾",
       "time": 1781537670357
-    },
-    {
-      "text": "Invoice INV-3 saved · ₹14,650.00",
-      "icon": "🧾",
-      "time": 1781535728472
     }
   ]
 }
