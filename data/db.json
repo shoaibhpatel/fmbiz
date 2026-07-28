@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-07-27T13:12:33.636Z",
+  "exported_at": "2026-07-28T11:34:47.488Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -520,21 +520,26 @@
           "desc": "5 extra photos",
           "qty": 5,
           "rate": 7
+        },
+        {
+          "desc": "Bharatnatyyam Edit",
+          "qty": 45,
+          "rate": 7
         }
       ],
-      "subtotal": 3815,
+      "subtotal": 4130,
       "discount": 0,
       "tax": 0,
-      "total": 3815,
+      "total": 4130,
       "advance": 0,
-      "balance": 3815,
+      "balance": 4130,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1785157950628,
+      "created": 1785238484465,
       "id": 15
     }
   ],
@@ -755,6 +760,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-7 saved · ₹4,130.00",
+      "icon": "🧾",
+      "time": 1785238484468
+    },
+    {
       "text": "Invoice INV-7 saved · ₹3,815.00",
       "icon": "🧾",
       "time": 1785157950629
@@ -898,11 +908,6 @@
       "text": "Customer added: Ramana Photography",
       "icon": "👤",
       "time": 1781613160473
-    },
-    {
-      "text": "Invoice INV-2 saved · ₹8,660.00",
-      "icon": "🧾",
-      "time": 1781602624505
     }
   ]
 }
