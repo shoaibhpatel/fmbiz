@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-08-13T09:22:43.770Z",
+  "exported_at": "2026-08-13T10:24:02.899Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -530,21 +530,26 @@
           "desc": "Womens Day ",
           "qty": 162,
           "rate": 7
+        },
+        {
+          "desc": "parimala bday",
+          "qty": 142,
+          "rate": 7
         }
       ],
-      "subtotal": 5264,
+      "subtotal": 6258,
       "discount": 0,
       "tax": 0,
-      "total": 5264,
+      "total": 6258,
       "advance": 0,
-      "balance": 5264,
+      "balance": 6258,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1786612960754,
+      "created": 1786616639870,
       "id": 15
     }
   ],
@@ -787,6 +792,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-7 saved · ₹6,258.00",
+      "icon": "🧾",
+      "time": 1786616639879
+    },
+    {
       "text": "Invoice INV-7 saved · ₹5,264.00",
       "icon": "🧾",
       "time": 1786612960766
@@ -930,11 +940,6 @@
       "text": "Invoice INV-4 saved · ₹2,500.00",
       "icon": "🧾",
       "time": 1781627954561
-    },
-    {
-      "text": "Payment received ₹2,000.00 for INV-4",
-      "icon": "💰",
-      "time": 1781619243541
     }
   ]
 }
