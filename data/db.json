@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-08-12T17:17:32.543Z",
+  "exported_at": "2026-08-13T09:22:43.770Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -525,21 +525,26 @@
           "desc": "Bharatnatyyam Edit",
           "qty": 45,
           "rate": 7
+        },
+        {
+          "desc": "Womens Day ",
+          "qty": 162,
+          "rate": 7
         }
       ],
-      "subtotal": 4130,
+      "subtotal": 5264,
       "discount": 0,
       "tax": 0,
-      "total": 4130,
+      "total": 5264,
       "advance": 0,
-      "balance": 4130,
+      "balance": 5264,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1785238484465,
+      "created": 1786612960754,
       "id": 15
     }
   ],
@@ -782,6 +787,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-7 saved · ₹5,264.00",
+      "icon": "🧾",
+      "time": 1786612960766
+    },
+    {
       "text": "Payment received ₹6,000.00 for INV-6",
       "icon": "💰",
       "time": 1786555049535
@@ -925,11 +935,6 @@
       "text": "Payment received ₹2,000.00 for INV-4",
       "icon": "💰",
       "time": 1781619243541
-    },
-    {
-      "text": "Invoice INV-4 saved · ₹2,000.00",
-      "icon": "🧾",
-      "time": 1781613201916
     }
   ]
 }
