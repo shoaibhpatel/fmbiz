@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-08-13T12:05:50.400Z",
+  "exported_at": "2026-08-13T12:08:34.044Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -64,14 +64,14 @@
       "name": "1st Birthday - Angelina",
       "customer_id": 8,
       "type": "Birthday",
-      "status": "Pending",
+      "status": "Completed",
       "booking": "2026-06-07",
       "event": "2026-06-07",
       "delivery": "2026-06-11",
       "value": 0,
       "advance": 0,
       "notes": "",
-      "created": 1780840058450,
+      "created": 1786622911031,
       "pending": 0,
       "id": 1
     },
@@ -797,6 +797,11 @@
   },
   "activities": [
     {
+      "text": "Project updated: 1st Birthday - Angelina",
+      "icon": "📁",
+      "time": 1786622911039
+    },
+    {
       "text": "Invoice INV-7 saved · ₹7,364.00",
       "icon": "🧾",
       "time": 1786622747174
@@ -940,11 +945,6 @@
       "text": "Payment received ₹24,000.00 for INV-1",
       "icon": "💰",
       "time": 1781628054629
-    },
-    {
-      "text": "Payment received ₹500.00 for INV-4",
-      "icon": "💰",
-      "time": 1781627962712
     }
   ]
 }
