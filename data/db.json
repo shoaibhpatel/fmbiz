@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-08-14T11:37:07.792Z",
+  "exported_at": "2026-08-14T12:29:32.636Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -545,21 +545,26 @@
           "desc": "BartaNatyam ",
           "qty": 515,
           "rate": 7
+        },
+        {
+          "desc": "old job house worming ",
+          "qty": 95,
+          "rate": 7
         }
       ],
-      "subtotal": 10969,
+      "subtotal": 11634,
       "discount": 0,
       "tax": 0,
-      "total": 10969,
+      "total": 11634,
       "advance": 0,
-      "balance": 10969,
+      "balance": 11634,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1786707424181,
+      "created": 1786710569614,
       "id": 15
     }
   ],
@@ -802,6 +807,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-7 saved · ₹11,634.00",
+      "icon": "🧾",
+      "time": 1786710569618
+    },
+    {
       "text": "Invoice INV-7 saved · ₹10,969.00",
       "icon": "🧾",
       "time": 1786707424182
@@ -945,11 +955,6 @@
       "text": "Invoice INV-5 saved · ₹900.00",
       "icon": "🧾",
       "time": 1781797513837
-    },
-    {
-      "text": "Payment received ₹8,006.00 for INV-2",
-      "icon": "💰",
-      "time": 1781786998063
     }
   ]
 }
