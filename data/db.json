@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-08-14T12:29:32.636Z",
+  "exported_at": "2026-08-15T12:53:55.169Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -550,21 +550,26 @@
           "desc": "old job house worming ",
           "qty": 95,
           "rate": 7
+        },
+        {
+          "desc": "Outdoor shoot",
+          "qty": 94,
+          "rate": 7
         }
       ],
-      "subtotal": 11634,
+      "subtotal": 12292,
       "discount": 0,
       "tax": 0,
-      "total": 11634,
+      "total": 12292,
       "advance": 0,
-      "balance": 11634,
+      "balance": 12292,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1786710569614,
+      "created": 1786798432162,
       "id": 15
     }
   ],
@@ -807,6 +812,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-7 saved · ₹12,292.00",
+      "icon": "🧾",
+      "time": 1786798432163
+    },
+    {
       "text": "Invoice INV-7 saved · ₹11,634.00",
       "icon": "🧾",
       "time": 1786710569618
@@ -950,11 +960,6 @@
       "text": "Invoice INV-6 saved · ₹3,000.00",
       "icon": "🧾",
       "time": 1781963907547
-    },
-    {
-      "text": "Invoice INV-5 saved · ₹900.00",
-      "icon": "🧾",
-      "time": 1781797513837
     }
   ]
 }
