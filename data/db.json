@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-08-20T10:45:19.904Z",
+  "exported_at": "2026-08-20T10:45:54.914Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -571,6 +571,34 @@
       "recurring_last": "",
       "created": 1787222716887,
       "id": 15
+    },
+    {
+      "number": "INV-8",
+      "customer_id": 6,
+      "project_id": null,
+      "date": "2026-08-20",
+      "due": "2026-09-04",
+      "items": [
+        {
+          "desc": "Bharatnatyam Backgound change ",
+          "qty": 30,
+          "rate": 50
+        }
+      ],
+      "subtotal": 1500,
+      "discount": 0,
+      "tax": 0,
+      "total": 1500,
+      "advance": 0,
+      "balance": 1500,
+      "status": "Unpaid",
+      "notes": "",
+      "recurring": 0,
+      "recurring_next": "",
+      "recurring_active": 0,
+      "recurring_last": "",
+      "created": 1787222751896,
+      "id": 16
     }
   ],
   "payments": [
@@ -812,6 +840,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-8 saved · ₹1,500.00",
+      "icon": "🧾",
+      "time": 1787222751908
+    },
+    {
       "text": "Invoice INV-7 saved · ₹12,292.00",
       "icon": "🧾",
       "time": 1787222716899
@@ -955,11 +988,6 @@
       "text": "Invoice INV-5 saved · ₹3,300.00",
       "icon": "🧾",
       "time": 1782569163232
-    },
-    {
-      "text": "Project updated: Puberty Ceremony - Thurga",
-      "icon": "📁",
-      "time": 1781975567962
     }
   ]
 }
