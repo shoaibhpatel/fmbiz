@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-08-21T10:14:26.300Z",
+  "exported_at": "2026-08-21T10:18:25.158Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -610,6 +610,44 @@
       "recurring_last": "",
       "created": 1787222751896,
       "id": 16
+    },
+    {
+      "number": "INV-9",
+      "customer_id": 10,
+      "project_id": null,
+      "date": "2026-08-21",
+      "due": "2026-09-05",
+      "items": [
+        {
+          "desc": " Shriva Design",
+          "qty": 1,
+          "rate": 1150
+        },
+        {
+          "desc": "Naming Ceremony",
+          "qty": 1,
+          "rate": 1350
+        },
+        {
+          "desc": "Shrivath",
+          "qty": 1,
+          "rate": 1450
+        }
+      ],
+      "subtotal": 3950,
+      "discount": 0,
+      "tax": 0,
+      "total": 3950,
+      "advance": 0,
+      "balance": 3950,
+      "status": "Unpaid",
+      "notes": "",
+      "recurring": 0,
+      "recurring_next": "",
+      "recurring_active": 0,
+      "recurring_last": "",
+      "created": 1787307502137,
+      "id": 17
     }
   ],
   "payments": [
@@ -851,6 +889,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-9 saved · ₹3,950.00",
+      "icon": "🧾",
+      "time": 1787307502153
+    },
+    {
       "text": "Customer added: Surendra Pagare",
       "icon": "👤",
       "time": 1787307263290
@@ -994,11 +1037,6 @@
       "text": "Quotation QT-1 saved",
       "icon": "📝",
       "time": 1782830998511
-    },
-    {
-      "text": "Invoice INV-5 saved · ₹3,950.00",
-      "icon": "🧾",
-      "time": 1782723046911
     }
   ]
 }
