@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-08-21T10:54:31.320Z",
+  "exported_at": "2026-08-21T10:55:09.777Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -594,21 +594,26 @@
           "desc": "Bharatnatyam Backgound change ",
           "qty": 30,
           "rate": 50
+        },
+        {
+          "desc": "Event Press",
+          "qty": 137,
+          "rate": 7
         }
       ],
-      "subtotal": 1500,
+      "subtotal": 2459,
       "discount": 0,
       "tax": 0,
-      "total": 1500,
+      "total": 2459,
       "advance": 0,
-      "balance": 1500,
+      "balance": 2459,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1787222751896,
+      "created": 1787309706764,
       "id": 16
     },
     {
@@ -911,6 +916,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-8 saved · ₹2,459.00",
+      "icon": "🧾",
+      "time": 1787309706773
+    },
+    {
       "text": "Payment received ₹2,292.00 for INV-7",
       "icon": "💰",
       "time": 1787309668305
@@ -1054,11 +1064,6 @@
       "text": "Invoice INV-5 saved · ₹4,946.00",
       "icon": "🧾",
       "time": 1783084608179
-    },
-    {
-      "text": "Invoice INV-6 saved · ₹6,000.00",
-      "icon": "🧾",
-      "time": 1782837384334
     }
   ]
 }
