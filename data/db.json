@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-08-20T10:45:54.914Z",
+  "exported_at": "2026-08-21T10:14:26.300Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -57,6 +57,17 @@
       "notes": "",
       "created": 1781613160460,
       "id": 9
+    },
+    {
+      "name": "Surendra Pagare",
+      "mobile": "9067591355",
+      "whatsapp": "",
+      "email": "",
+      "city": "Nashik",
+      "address": "Nashik",
+      "notes": "",
+      "created": 1787307263276,
+      "id": 10
     }
   ],
   "projects": [
@@ -840,6 +851,11 @@
   },
   "activities": [
     {
+      "text": "Customer added: Surendra Pagare",
+      "icon": "👤",
+      "time": 1787307263290
+    },
+    {
       "text": "Invoice INV-8 saved · ₹1,500.00",
       "icon": "🧾",
       "time": 1787222751908
@@ -983,11 +999,6 @@
       "text": "Invoice INV-5 saved · ₹3,950.00",
       "icon": "🧾",
       "time": 1782723046911
-    },
-    {
-      "text": "Invoice INV-5 saved · ₹3,300.00",
-      "icon": "🧾",
-      "time": 1782569163232
     }
   ]
 }
