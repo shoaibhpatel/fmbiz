@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-08-21T16:38:43.259Z",
+  "exported_at": "2026-08-22T11:16:09.880Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -599,21 +599,26 @@
           "desc": "Event Press",
           "qty": 136,
           "rate": 7
+        },
+        {
+          "desc": "Sbi - Womens day",
+          "qty": 104,
+          "rate": 7
         }
       ],
-      "subtotal": 2502,
+      "subtotal": 3230,
       "discount": 0,
       "tax": 0,
-      "total": 2502,
+      "total": 3230,
       "advance": 0,
-      "balance": 2502,
+      "balance": 3230,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1787330320239,
+      "created": 1787397366849,
       "id": 16
     },
     {
@@ -916,6 +921,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-8 saved · ₹3,230.00",
+      "icon": "🧾",
+      "time": 1787397366862
+    },
+    {
       "text": "Invoice INV-8 saved · ₹2,502.00",
       "icon": "🧾",
       "time": 1787330320255
@@ -1059,11 +1069,6 @@
       "text": "Invoice INV-5 saved · ₹6,956.00",
       "icon": "🧾",
       "time": 1783595312673
-    },
-    {
-      "text": "Invoice INV-5 saved · ₹6,146.00",
-      "icon": "🧾",
-      "time": 1783333967942
     }
   ]
 }
