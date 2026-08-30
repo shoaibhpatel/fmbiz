@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-08-29T11:08:42.504Z",
+  "exported_at": "2026-08-30T16:41:36.473Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -614,21 +614,26 @@
           "desc": "CII press shoot",
           "qty": 109,
           "rate": 7
+        },
+        {
+          "desc": "Telugu Day",
+          "qty": 185,
+          "rate": 7
         }
       ],
-      "subtotal": 6268,
+      "subtotal": 7563,
       "discount": 0,
       "tax": 0,
-      "total": 6268,
+      "total": 7563,
       "advance": 0,
-      "balance": 6268,
+      "balance": 7563,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1788001719493,
+      "created": 1788108093454,
       "id": 16
     },
     {
@@ -953,6 +958,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-8 saved · ₹7,563.00",
+      "icon": "🧾",
+      "time": 1788108093456
+    },
+    {
       "text": "Invoice INV-8 saved · ₹6,268.00",
       "icon": "🧾",
       "time": 1788001719495
@@ -1096,11 +1106,6 @@
       "text": "Invoice INV-5 saved · ₹11,114.00",
       "icon": "🧾",
       "time": 1784296655461
-    },
-    {
-      "text": "Invoice INV-5 saved · ₹10,274.00",
-      "icon": "🧾",
-      "time": 1784292370429
     }
   ]
 }
