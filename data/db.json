@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-08-30T16:41:36.473Z",
+  "exported_at": "2026-09-01T11:41:57.396Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -663,9 +663,9 @@
       "discount": 0,
       "tax": 0,
       "total": 3950,
-      "advance": 3000,
-      "balance": 950,
-      "status": "Partial",
+      "advance": 3950,
+      "balance": 0,
+      "status": "Paid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
@@ -785,6 +785,16 @@
       "notes": "",
       "created": 1787839021153,
       "id": 19
+    },
+    {
+      "invoice_id": 17,
+      "customer_id": 10,
+      "date": "2026-09-01",
+      "amount": 950,
+      "mode": "Cash",
+      "notes": "",
+      "created": 1788262914381,
+      "id": 20
     }
   ],
   "expenses": [],
@@ -919,6 +929,18 @@
       "notes": "",
       "created": 1787839021167,
       "id": 19
+    },
+    {
+      "number": "RC-12",
+      "payment_id": 20,
+      "invoice_id": 17,
+      "customer_id": 10,
+      "date": "2026-09-01",
+      "amount": 950,
+      "mode": "Cash",
+      "notes": "",
+      "created": 1788262914382,
+      "id": 20
     }
   ],
   "settings": {
@@ -957,6 +979,11 @@
     "auto_items": []
   },
   "activities": [
+    {
+      "text": "Payment received ₹950.00 for INV-9",
+      "icon": "💰",
+      "time": 1788262914383
+    },
     {
       "text": "Invoice INV-8 saved · ₹7,563.00",
       "icon": "🧾",
@@ -1101,11 +1128,6 @@
       "text": "Invoice INV-5 saved · ₹11,128.00",
       "icon": "🧾",
       "time": 1784296910375
-    },
-    {
-      "text": "Invoice INV-5 saved · ₹11,114.00",
-      "icon": "🧾",
-      "time": 1784296655461
     }
   ]
 }
