@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-09-04T17:11:39.343Z",
+  "exported_at": "2026-09-12T15:23:31.880Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -678,6 +678,34 @@
       "recurring_last": "",
       "created": 1787307502137,
       "id": 17
+    },
+    {
+      "number": "INV-10",
+      "customer_id": 5,
+      "project_id": null,
+      "date": "2026-09-12",
+      "due": "2026-09-27",
+      "items": [
+        {
+          "desc": "2 job",
+          "qty": 2,
+          "rate": 300
+        }
+      ],
+      "subtotal": 600,
+      "discount": 0,
+      "tax": 0,
+      "total": 600,
+      "advance": 0,
+      "balance": 600,
+      "status": "Unpaid",
+      "notes": "",
+      "recurring": 0,
+      "recurring_next": "",
+      "recurring_active": 0,
+      "recurring_last": "",
+      "created": 1789226608867,
+      "id": 18
     }
   ],
   "payments": [
@@ -985,6 +1013,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-10 saved · ₹600.00",
+      "icon": "🧾",
+      "time": 1789226608876
+    },
+    {
       "text": "Invoice INV-8 saved · ₹10,524.00",
       "icon": "🧾",
       "time": 1788541896338
@@ -1128,11 +1161,6 @@
       "text": "Invoice INV-5 saved · ₹12,486.00",
       "icon": "🧾",
       "time": 1784551171607
-    },
-    {
-      "text": "Invoice INV-5 saved · ₹11,387.00",
-      "icon": "🧾",
-      "time": 1784547375871
     }
   ]
 }
