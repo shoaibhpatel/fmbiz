@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "exported_at": "2026-09-12T15:23:31.880Z",
+  "exported_at": "2026-09-12T15:24:10.476Z",
   "source": "cloud-sync",
   "customers": [
     {
@@ -624,21 +624,26 @@
           "desc": "House warming ",
           "qty": 423,
           "rate": 7
+        },
+        {
+          "desc": "Ganesh Aagaman Photography India",
+          "qty": 390,
+          "rate": 7
         }
       ],
-      "subtotal": 10524,
+      "subtotal": 13254,
       "discount": 0,
       "tax": 0,
-      "total": 10524,
+      "total": 13254,
       "advance": 0,
-      "balance": 10524,
+      "balance": 13254,
       "status": "Unpaid",
       "notes": "",
       "recurring": 0,
       "recurring_next": "",
       "recurring_active": 0,
       "recurring_last": "",
-      "created": 1788541896335,
+      "created": 1789226647469,
       "id": 16
     },
     {
@@ -1013,6 +1018,11 @@
   },
   "activities": [
     {
+      "text": "Invoice INV-8 saved · ₹13,254.00",
+      "icon": "🧾",
+      "time": 1789226647471
+    },
+    {
       "text": "Invoice INV-10 saved · ₹600.00",
       "icon": "🧾",
       "time": 1789226608876
@@ -1156,11 +1166,6 @@
       "text": "Payment received ₹12,486.00 for INV-5",
       "icon": "💰",
       "time": 1784725746806
-    },
-    {
-      "text": "Invoice INV-5 saved · ₹12,486.00",
-      "icon": "🧾",
-      "time": 1784551171607
     }
   ]
 }
